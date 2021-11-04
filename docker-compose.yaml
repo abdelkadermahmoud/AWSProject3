@@ -23,7 +23,7 @@ services:
   backend-feed:
     image: udagram-api-feed
     volumes:
-      - abdel/.aws:/root/.aws
+      - "/c/users/abdel/.aws:/root/.aws"
     environment:
       POSTGRES_USERNAME: $POSTGRES_USERNAME
       POSTGRES_PASSWORD: $POSTGRES_PASSWORD 
