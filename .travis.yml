@@ -16,7 +16,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker-compose -f docker-compose-build.yaml build --parallel
+  - docker-compose -f docker-compose-build.yaml build 
   - docker tag reverseproxy abdelkaderm/reverseproxy:gitHub
   - docker tag udagram-api-user abdelkaderm/udagram-api-user:gitHub
   - docker tag udagram-frontend abdelkaderm/udagram-frontend:gitHub
