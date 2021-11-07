@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: reverseproxy
   labels:
-    run: reverseproxy
+    app: reverseproxy
 spec:
   ports:
   - port: 80
