@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: micro-abdo-dev
+  AWS_PROFILE: abdelkader
+  AWS_REGION: us-east-1
+  JWT_SECRET: hello
+  POSTGRES_DB: abdelkader
+  POSTGRES_HOST: abdelkader.czhsk5dzvi5u.us-east-1.rds.amazonaws.com
+  URL: http://a781b6ee12ff74f59af041b344b92d8d-734936407.us-east-2.elb.amazonaws.com/:8100  
+metadata:
+  name: env-config
+  
+# you will replace URL with the URL of the frontend once you deploy it to AWS.
